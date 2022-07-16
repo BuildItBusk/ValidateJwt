@@ -25,7 +25,7 @@ builder.Services
         jwtOptions.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ThisKeyMustBeAtLeast32Characters")),
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Super-Secret-Key")),
             ValidateIssuer = false,
             ValidateAudience = false,
             ValidateLifetime = false
